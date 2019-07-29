@@ -1,4 +1,4 @@
-package com.handrt.mybatis.mybatis_handwrite;
+package com.handrt.mybatis;
 
 /**
  * Hello world!
