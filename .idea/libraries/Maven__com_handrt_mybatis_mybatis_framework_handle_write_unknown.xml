@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.handrt.mybatis:mybatis-framework-handle-write:unknown">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/handrt/mybatis/mybatis-framework-handle-write/unknown/mybatis-framework-handle-write-unknown.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/handrt/mybatis/mybatis-framework-handle-write/unknown/mybatis-framework-handle-write-unknown-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/handrt/mybatis/mybatis-framework-handle-write/unknown/mybatis-framework-handle-write-unknown-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
