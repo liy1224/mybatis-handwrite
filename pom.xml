@@ -7,7 +7,6 @@
   <version>0.0.1-SNAPSHOT</version>
   <modules>
     <module>mybatis-demo</module>
-    <module>mybatis-framework-handle-write</module>
     <module>mybatis-framework-handle-write-custom</module>
   </modules>
   <packaging>pom</packaging>

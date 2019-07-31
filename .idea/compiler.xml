@@ -7,9 +7,11 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="mybatis-demo" />
-        <module name="mybatis-framework-handle-write" />
         <module name="mybatis-framework-handle-write-custom" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="mybatis-framework-handle-write" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
