@@ -4,7 +4,7 @@ import com.handrt.mybatis.framework.builder.XMLConfigBuilder;
 import com.handrt.mybatis.framework.config.Configuration;
 import org.junit.Test;
 
-import java.net.URL;
+import java.io.InputStream;
 
 /**
  * 测试基础案例
@@ -22,7 +22,7 @@ public class TestClass2 {
 	public void test()throws Exception  {
 		// 1,根据配置文件路径，读取配置文件（输出：InputStream流）
 		String resource = "SqlMapConfig.xml";
-		URL inputStream = this.getClass().getClassLoader().getResource(resource);
+		InputStream inputStream = this.getClass().getClassLoader().getResourceAsStream(resource);
 
 		XMLConfigBuilder xmlConfigBuilder = new XMLConfigBuilder();
 		Configuration configuration = xmlConfigBuilder.parse(inputStream);

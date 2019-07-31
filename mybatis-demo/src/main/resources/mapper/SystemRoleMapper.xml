@@ -1,7 +1,8 @@
 <mapper namespace="test">
 
-    <!---->
-    <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="com.handrt.mybatis.entity.SystemRole">
+    <!--select 标签，入参类型，结果映射类型-->
+    <select id="selectByPrimaryKey" parameterType="java.lang.Long"
+            resultType="com.handrt.mybatis.entity.SystemRole" statementType="CALLABLE">
         select * from system_role  where id = #{id}
     </select>
 

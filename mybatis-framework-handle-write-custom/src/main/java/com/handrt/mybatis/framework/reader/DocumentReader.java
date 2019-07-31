@@ -3,7 +3,7 @@ package com.handrt.mybatis.framework.reader;
 import org.dom4j.Document;
 import org.dom4j.io.SAXReader;
 
-import java.net.URL;
+import java.io.InputStream;
 
 /**
  *
@@ -14,7 +14,7 @@ public class DocumentReader {
      * @param inputStream
      * @return
      */
-    public Document createDocument(URL inputStream) {
+    public Document createDocument(InputStream inputStream) {
         // 解析document
         SAXReader reader = new SAXReader();
         Document document = null;

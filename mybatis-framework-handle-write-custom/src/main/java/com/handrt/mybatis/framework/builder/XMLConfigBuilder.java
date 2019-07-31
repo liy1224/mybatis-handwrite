@@ -7,6 +7,7 @@ import org.apache.commons.dbcp.BasicDataSource;
 import org.dom4j.Document;
 import org.dom4j.Element;
 
+import java.io.InputStream;
 import java.net.URL;
 import java.util.List;
 import java.util.Properties;
@@ -28,7 +29,7 @@ public class XMLConfigBuilder {
      * @param inputStream
      * @return
      */
-    public Configuration parse(URL inputStream) {
+    public Configuration parse(InputStream inputStream) {
         // 创建Document对象（不会对mybatis语以进行解析）
         DocumentReader documentReader = new DocumentReader();
         Document document = documentReader.createDocument(inputStream);
@@ -63,8 +64,17 @@ public class XMLConfigBuilder {
         });
     }
 
+    /**
+     *
+     * @param element
+     */
     private void parseMapperElement(Element element) {
-
+        // 1,根据映射文件路径，读取映射文件（InputStream流程）
+        String resource = element.attributeValue("resource");
+        InputStream inputStream = this.getClass().getClassLoader().getResourceAsStream(resource);
+        // 2,创建Document对象（不做解析mybatis语义）
+        XMLMapperBuilder xmlMapperBuilder = new XMLMapperBuilder(configuration);
+        xmlMapperBuilder.parse(inputStream);
     }
 
     /**
