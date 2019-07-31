@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/mybatis-demo/mybatis-demo.iml" filepath="$PROJECT_DIR$/mybatis-demo/mybatis-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/mybatis-framework-handle-write/mybatis-framework-handle-write.iml" filepath="$PROJECT_DIR$/mybatis-framework-handle-write/mybatis-framework-handle-write.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mybatis-framework-handle-write-custom/mybatis-framework-handle-write-custom.iml" filepath="$PROJECT_DIR$/mybatis-framework-handle-write-custom/mybatis-framework-handle-write-custom.iml" />
       <module fileurl="file://$PROJECT_DIR$/mybatis-handwrite.iml" filepath="$PROJECT_DIR$/mybatis-handwrite.iml" />
     </modules>
   </component>

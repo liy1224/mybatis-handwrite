@@ -8,6 +8,7 @@
   <modules>
     <module>mybatis-demo</module>
     <module>mybatis-framework-handle-write</module>
+    <module>mybatis-framework-handle-write-custom</module>
   </modules>
   <packaging>pom</packaging>
 
