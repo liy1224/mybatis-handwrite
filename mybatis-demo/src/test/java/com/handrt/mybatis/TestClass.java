@@ -1,3 +1,4 @@
+/*
 package com.handrt.mybatis;
 
 import java.io.IOException;
@@ -9,22 +10,26 @@ import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 import org.junit.Before;
 import org.junit.Test;
 
+*/
 /**
  * 测试基础案例
  * 基于xml
  * @author Administrator
  *
- */
+ *//*
+
 public class TestClass {
 
 	private SqlSessionFactory sqlSessionFactory;
 	
 	@Before
 	public void init() throws IOException{
-		/**
+		*/
+/**
 		 * 加载全局配置文件，同时把映射文件也加载了
 		 * 读取SqlMapConfig.xml
-		 */
+		 *//*
+
 		String sqlMapConfig = "mybatis/SqlMapConfig.xml";
 		InputStream inputStream = Resources.getResourceAsStream(sqlMapConfig);
 		//sqlsessionFactory需要通过sqlsessionFactoryBuilder读取全局配置文件信息
@@ -44,3 +49,4 @@ public class TestClass {
 	
 
 }
+*/

@@ -21,11 +21,6 @@
             <version>4.11</version>
         </dependency>
         <dependency>
-            <groupId>org.mybatis</groupId>
-            <artifactId>mybatis</artifactId>
-            <version>3.5.2</version>
-        </dependency>
-        <dependency>
             <groupId>com.handrt.mybatis</groupId>
             <artifactId>mybatis-framework-handle-write-custom</artifactId>
             <version>0.0.1-SNAPSHOT</version>

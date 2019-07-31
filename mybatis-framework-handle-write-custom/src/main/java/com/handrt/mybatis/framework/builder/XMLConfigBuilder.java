@@ -112,9 +112,9 @@ public class XMLConfigBuilder {
         // 获取连接池类型
         String dataSourceType = dataSourceElement.attributeValue("type");
         // 获取所有连接池下的属性+
-        List<Element> propertys = (List<Element>) dataSourceElement.element("property");
+        List<Element> propertyList = dataSourceElement.elements("property");
         Properties properties = new Properties();
-        propertys.forEach(property -> {
+        propertyList.forEach(property -> {
             String name = property.attributeValue("name");
             String value = property.attributeValue("value");
             properties.setProperty(name,value);
