@@ -2,7 +2,7 @@
 
     <!--select 标签，入参类型，结果映射类型-->
     <select id="selectByPrimaryKey" parameterType="java.lang.Long"
-            resultType="com.handrt.mybatis.entity.SystemRole" statementType="CALLABLE">
+            resultType="com.handrt.mybatis.entity.SystemRole" statementType="prepared">
         select * from system_role  where id = #{id}
     </select>
 

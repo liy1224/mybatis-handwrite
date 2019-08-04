@@ -18,8 +18,8 @@ CREATE TABLE `system_role` (
   `status` int(10) unsigned NOT NULL DEFAULT '1' COMMENT '状态：0=不可用，1=正常',
   `modified_account` varchar(50) DEFAULT NULL COMMENT '最后修改人账户',
   `modified_name` varchar(50) DEFAULT NULL COMMENT '最后修改人名称',
-  `create_time` datetime DEFAULT CURRENT_TIMESTAMP,
-  `modified_time` datetime DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  `create_time` datetime,
+  `modified_time` datetime ,
   `access_type` int(11) NOT NULL DEFAULT '1',
   PRIMARY KEY (`id`),
   UNIQUE KEY `id` (`id`)

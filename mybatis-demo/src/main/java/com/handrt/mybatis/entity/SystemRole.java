@@ -6,21 +6,21 @@ public class SystemRole {
    
     private Long id;
 
-    private Long tenantId;
+    private Long tenant_id;
 
-    private String tenantName;
+    private String tenant_name;
 
-    private Integer tenantType;
+    private Integer tenant_type;
 
-    private Long projectId;
+    private Long project_id;
 
-    private String projectName;
+    private String project_name;
 
     private String name;
 
     private String pinyin;
 
-    private String shortPinyin;
+    private String short_pinyin;
 
     private String permissions;
 
@@ -28,15 +28,15 @@ public class SystemRole {
 
     private Integer status;
 
-    private String modifiedAccount;
+    private String modified_account;
 
-    private String modifiedName;
+    private String modified_name;
 
-    private Date createTime;
+    private Date create_time;
 
-    private Date modifiedTime;
+    private Date modified_time;
 
-    private Integer accessType;
+    private Integer access_type;
 
 	public Long getId() {
 		return id;
@@ -46,44 +46,44 @@ public class SystemRole {
 		this.id = id;
 	}
 
-	public Long getTenantId() {
-		return tenantId;
+	public Long getTenant_id() {
+		return tenant_id;
 	}
 
-	public void setTenantId(Long tenantId) {
-		this.tenantId = tenantId;
+	public void setTenant_id(Long tenant_id) {
+		this.tenant_id = tenant_id;
 	}
 
-	public String getTenantName() {
-		return tenantName;
+	public String getTenant_name() {
+		return tenant_name;
 	}
 
-	public void setTenantName(String tenantName) {
-		this.tenantName = tenantName;
+	public void setTenant_name(String tenant_name) {
+		this.tenant_name = tenant_name;
 	}
 
-	public Integer getTenantType() {
-		return tenantType;
+	public Integer getTenant_type() {
+		return tenant_type;
 	}
 
-	public void setTenantType(Integer tenantType) {
-		this.tenantType = tenantType;
+	public void setTenant_type(Integer tenant_type) {
+		this.tenant_type = tenant_type;
 	}
 
-	public Long getProjectId() {
-		return projectId;
+	public Long getProject_id() {
+		return project_id;
 	}
 
-	public void setProjectId(Long projectId) {
-		this.projectId = projectId;
+	public void setProject_id(Long project_id) {
+		this.project_id = project_id;
 	}
 
-	public String getProjectName() {
-		return projectName;
+	public String getProject_name() {
+		return project_name;
 	}
 
-	public void setProjectName(String projectName) {
-		this.projectName = projectName;
+	public void setProject_name(String project_name) {
+		this.project_name = project_name;
 	}
 
 	public String getName() {
@@ -102,12 +102,12 @@ public class SystemRole {
 		this.pinyin = pinyin;
 	}
 
-	public String getShortPinyin() {
-		return shortPinyin;
+	public String getShort_pinyin() {
+		return short_pinyin;
 	}
 
-	public void setShortPinyin(String shortPinyin) {
-		this.shortPinyin = shortPinyin;
+	public void setShort_pinyin(String short_pinyin) {
+		this.short_pinyin = short_pinyin;
 	}
 
 	public String getPermissions() {
@@ -134,44 +134,43 @@ public class SystemRole {
 		this.status = status;
 	}
 
-	public String getModifiedAccount() {
-		return modifiedAccount;
+	public String getModified_account() {
+		return modified_account;
 	}
 
-	public void setModifiedAccount(String modifiedAccount) {
-		this.modifiedAccount = modifiedAccount;
+	public void setModified_account(String modified_account) {
+		this.modified_account = modified_account;
 	}
 
-	public String getModifiedName() {
-		return modifiedName;
+	public String getModified_name() {
+		return modified_name;
 	}
 
-	public void setModifiedName(String modifiedName) {
-		this.modifiedName = modifiedName;
+	public void setModified_name(String modified_name) {
+		this.modified_name = modified_name;
 	}
 
-	public Date getCreateTime() {
-		return createTime;
+	public Date getCreate_time() {
+		return create_time;
 	}
 
-	public void setCreateTime(Date createTime) {
-		this.createTime = createTime;
+	public void setCreate_time(Date create_time) {
+		this.create_time = create_time;
 	}
 
-	public Date getModifiedTime() {
-		return modifiedTime;
+	public Date getModified_time() {
+		return modified_time;
 	}
 
-	public void setModifiedTime(Date modifiedTime) {
-		this.modifiedTime = modifiedTime;
+	public void setModified_time(Date modified_time) {
+		this.modified_time = modified_time;
 	}
 
-	public Integer getAccessType() {
-		return accessType;
+	public Integer getAccess_type() {
+		return access_type;
 	}
 
-	public void setAccessType(Integer accessType) {
-		this.accessType = accessType;
+	public void setAccess_type(Integer access_type) {
+		this.access_type = access_type;
 	}
-
 }

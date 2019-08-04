@@ -54,7 +54,7 @@ public class XMLMapperBuilder {
         // 未解析的#{}的sql文本
         String sqlText = element.getTextTrim();
         //解析sql文本
-        SqlSource sqlSource = new DefaultSqlSource(sqlText);
+        SqlSource sqlSource = new DefaultSqlSource(sqlText,parameterTypeClass);
 
         // 将select信息封装到到MapedStatement对象中，如何将MappedStatement封装到Configuration中
         MappedStatement mappedStatement =
@@ -63,7 +63,7 @@ public class XMLMapperBuilder {
         configuration.addMappedStatements(namespace+"."+id,mappedStatement);
     }
 
-    private Class<?> getTypeClass(String parameterType) {
+    private Class<?>  getTypeClass(String parameterType) {
         try {
             Class<?> clazz = Class.forName(parameterType);
             return clazz;
